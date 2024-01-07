@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	selector.addEventListener("change", (e) => {
 		// <audio>要素が再生状態の場合は一時停止する。
-		if(!audioElement.paused) audio.pause();
+		if(!audioElement.paused) audioElement.pause();
 
 		// <select>要素の value の値が空でなければ、その値を<audio>要素の src 属性に指定して再生
 		if(e.currentTarget.value !== "") {
