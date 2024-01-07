@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 初期化用
-init() {
+function init() {
 	// オーディオコンテキストの生成
 	audioCtx = new AudioContext();
 	// HTMLに記述した<audio>要素からMediaElementAudioSourceノードを生成
