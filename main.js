@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		// <select>要素の value の値が空でなければ、その値を<audio>要素の src 属性に指定して再生
 		if(e.currentTarget.value !== "") {
 			audio.src = e.currentTarget.value;
-			audio.play();
+			console.log(`読み込むファイル：${audio.src}`);
+			console.log("再生");
 		}
 	});
 
@@ -31,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		if(!audio.paused) audio.pause();
 	});
 
-	const audioSource = audioCtx.createMediaElementSource(audio);
+	let audioSource = audioCtx.createMediaElementSource(audio);
+	
 	audioSource.connect(audioCtx.destination);
 
 });
