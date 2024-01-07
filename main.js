@@ -1,4 +1,4 @@
-let audioElement = document.querySelector("audio[name='track']");
+let audioElement = document.querySelector("audio[name='audioTrack']");
 
 let audioCtx;	// AudioContext
 let track;	// HTMLで記述した<audio>要素に対応するMediaElementAudioSourceNode
